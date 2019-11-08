@@ -1,0 +1,41 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int noofrow,noofq;
+        int sizz,input;
+        std::vector<int> vc1;
+cout<<"Enter no of rows that you want for rows : " ;
+cin >> noofrow;
+cout<<"Enter no of question that you want to ask : ";
+cin >>noofq;
+//======================================================
+for(int i = 0; i < noofrow ; i++){
+        cout<< "How many Numbers you want to enter : ";
+        cin >> sizz;
+        cout << "Input Data : " ;
+        for (int i = 0; i < sizz; i++) {//for taking input form the user
+            cin >> input;
+            vc1.push_back(input);
+        }
+        
+        cout << "print data of vector : " ;
+        for (int i = 0; i < sizz; i++) {
+            cout << vc1[i] << " " ;
+        }
+        
+     }
+
+}
